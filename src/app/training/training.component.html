@@ -1,0 +1,23 @@
+<mat-card style="background-color: darkseagreen;">
+    <h1>Training</h1>
+
+
+<h4>Choose activity</h4>
+
+<mat-form-field appearance="fill">
+  <mat-label>Activity types</mat-label>
+  <mat-select [(ngModel)]=selectedActivity>
+    <mat-option *ngFor="let activity of activityList" [value]="activity">
+      {{activity.activityName}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<input  placeholder="Activity duration" [(ngModel)]="trainingDurationInHours" style="width:100px">
+
+<button mat-raised-button color="accent" (click)="recordActivity()">Record activity</button>
+
+<ul>
+    <li *ngFor="let activity of burntCalories"> {{activity.activityName}} ilosc spalonych kalorii: {{activity.caloriesBurntDuringActivity}}</li>
+</ul>
+</mat-card>
