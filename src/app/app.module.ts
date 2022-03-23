@@ -11,12 +11,16 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { CaloriesSaldoComponent } from './calories-saldo/calories-saldo.component';
+import { BmiComponent } from './bmi/bmi.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TrainingComponent,
-    DietComponent
+    DietComponent,
+    CaloriesSaldoComponent,
+    BmiComponent
   ],
   imports: [
     BrowserModule,

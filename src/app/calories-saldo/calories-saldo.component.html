@@ -1,0 +1,9 @@
+<h1 style="text-align: center; margin-top:10px">My fit app</h1>
+<div style="display: flex; padding: 10px;">
+  <app-training style="width: 40%; margin: 5%;" (burntCaloriesSummation)="reducedCals($event)"></app-training>
+  <app-diet style="width: 40%;margin: 5%;" (sumOfEatenCaloriesUntilNow)="eatenCallories($event)"></app-diet>
+
+</div>
+<p style="text-align: center; font-weight: bold;">Saldo kalorii: {{caloriesSaldo}}</p>
+
+

@@ -1,0 +1,5 @@
+<div class ="wzrost"><p>Podaj wzrost </p> <input type="number" [(ngModel)]="wzrost"></div>
+<div class="waga"><p>Podaj wage </p> <input type="number" [(ngModel)]="waga"></div>
+<div class="oblicz"><button (click)="obliczBMI()">Oblicz BMI</button></div>
+
+<div><p class ="bmi">Twoja BMI to {{bmi}}</p> <span>{{kategoria}}</span></div>
